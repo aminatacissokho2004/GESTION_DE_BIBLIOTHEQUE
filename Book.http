@@ -1,0 +1,30 @@
+//Requette pour afficher la liste des Book
+GET http://localhost:5143/books/
+###
+//Requette pour recperer un livre a partir de son Id
+GET http://localhost:5143/books/3
+###
+//Requette pour ajouter un  nouveau book
+POST http://localhost:5143/books
+Content-Type: application/json
+
+{
+    "title": "#############################",
+    "author": "Antoine de ################ Exupery",
+    "pubDate": "1986-06-18"
+}
+###
+//Requette pour modifier un book
+PUT http://localhost:5143/books/0
+Content-Type: application/json
+
+{
+  "title": "LA SOLITUDE",
+  "author": "YOUSSOU THIOMBANE",
+  "pubDate": "2030-06-18"
+}
+###
+//Requette pour supprimer un book
+DELETE http://localhost:5143/books/4
+
+
